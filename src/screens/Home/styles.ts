@@ -6,6 +6,6 @@ export const styles = StyleSheet.create({
     width: '100%'
    },
    contentList: {
-    paddingRight: 32,
+    paddingRight: 24,
    }
 });

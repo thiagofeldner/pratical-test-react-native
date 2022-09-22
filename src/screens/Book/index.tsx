@@ -1,4 +1,5 @@
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { Heading } from '../../components/Heading';
 
 import { styles } from './styles';
 
