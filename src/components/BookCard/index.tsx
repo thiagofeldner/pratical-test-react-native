@@ -4,7 +4,6 @@ import  { Ionicons }  from '@expo/vector-icons';
 import { styles } from './styles';
 
 export interface BookCardProps {
-
   title: string;
   author: string;
   cover: ImageSourcePropType;  
