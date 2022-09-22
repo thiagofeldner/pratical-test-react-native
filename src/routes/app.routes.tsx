@@ -9,12 +9,12 @@ export function AppRoutes(){
   return (
     <Navigator>
       <Screen 
-        name='home'
+        name="home"
         component={Home}
       />
 
-      <Screen 
-        name='book'
+    <Screen 
+        name="book"
         component={Book}
       />
     </Navigator>
