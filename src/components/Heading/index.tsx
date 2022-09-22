@@ -22,7 +22,7 @@ export function Heading() {
         Categorias
       </Text>
 
-      <Text style={styles.maislidos}>
+      <Text style={styles.booksread}>
         Os mais lidos da semana
       </Text>      
     </View>
