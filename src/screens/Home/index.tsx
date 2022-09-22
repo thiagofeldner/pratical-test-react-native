@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+
 import { FlatList } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
@@ -10,7 +11,7 @@ import { styles } from './styles';
 
 export function Home() {
   const [books, setBooks] = useState<BookCardProps[]>([]);
-
+  
   useEffect(() => {
     fetch('https://api.nytimes.com/svc/books/v3/lists/names.json\?api-key\=vi0bsV0yOCA9qYnmAaOUJV4dO0BNhUGR')
     .then(response => response.json())
@@ -27,6 +28,7 @@ export function Home() {
         renderItem={({ item })  => (
           <BookCard 
             data={item}
+            
           />
         )}
         horizontal
