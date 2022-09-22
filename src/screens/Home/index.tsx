@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import { View, FlatList } from 'react-native';
-
+import { FlatList } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { BookCard, BookCardProps } from '../../components/BookCard';
 import { Heading } from '../../components/Heading';
@@ -18,7 +18,7 @@ export function Home() {
   },[]);
 
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <Heading />
 
       <FlatList 
@@ -33,6 +33,6 @@ export function Home() {
         showsHorizontalScrollIndicator={false}
         contentContainerStyle={styles.contentList}
       />       
-    </View>
+    </SafeAreaView>
   );
 }
