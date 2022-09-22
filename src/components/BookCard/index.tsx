@@ -4,10 +4,10 @@ import  { Ionicons }  from '@expo/vector-icons';
 import { styles } from './styles';
 
 export interface BookCardProps {
-  id: string;
+
   title: string;
   author: string;
-  cover: ImageSourcePropType;
+  cover: ImageSourcePropType;  
 }
 
 interface Props extends TouchableOpacityProps{
