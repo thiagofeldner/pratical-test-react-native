@@ -1,0 +1,40 @@
+import { TouchableOpacity, TouchableOpacityProps ,ImageBackground, ImageSourcePropType, Text } from 'react-native';
+import  { Ionicons }  from '@expo/vector-icons';
+
+import { styles } from './styles';
+
+export interface BooksReadProps {
+  title: string;
+  author: string;
+  cover: ImageSourcePropType;  
+}
+
+interface Props extends TouchableOpacityProps{
+  data : BooksReadProps;
+}
+
+export function BooksRead({ data, ...rest }: Props ) {
+  return (
+    <TouchableOpacity style={styles.container} {...rest}>
+      <ImageBackground 
+        style={styles.cover}
+        source={data.cover}
+      />  
+    
+      <Text style={styles.title}>
+        {data.title}
+      </Text>
+      <Text style={styles.author}>
+        {data.author}
+        
+        {/* <Ionicons name='star' size={10} color="#673403" />
+        <Ionicons name='star' size={10} color="#673403" />
+        <Ionicons name='star' size={10} color="#673403" />
+        <Ionicons name='star' size={10} color="#673403" />
+        <Ionicons name='star' size={10} color="#673403" /> */}
+      </Text>
+
+    </TouchableOpacity>   
+    
+  );
+}
